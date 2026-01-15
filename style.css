@@ -8,6 +8,7 @@ body {
     font-size: 1.2rem;
     font-family: 'Work Sans', sans-serif;
     min-height: 2000px;
+    overflow-x: hidden;
 }
 
 
@@ -347,6 +348,10 @@ footer li {
     margin: 0.5rem;
 }
 
+.offcanvas {
+    max-width: 100vw;
+}
+
 
 /* media query */
 /*extra large devices*/
@@ -407,7 +412,7 @@ footer li {
     }
 
     .sticky-top {
-        overflow: hidden;
+        overflow: visible;
     }
 
     .timeline li .timeline-img {
@@ -439,3 +444,4 @@ footer li {
         top: 31px;
     }
 }
+
