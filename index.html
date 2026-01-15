@@ -378,6 +378,8 @@
             <div class="col text-center">
                 <small class="block">&copy; 2026 Eremika Wedding. All rights reserved.</small>
                 <small class="block">Design by <a href="https://instagram.com/daviiqg_">@daviiqg_</a></small>
+                <br>
+                <small class="block">Davictor Qawighany, 112410040, Teknik Informatika, Pemrograman Web 1</small>
 
                 <ul class="mt-3">
                     <li><a href="#"><i class="bi bi-instagram"></i></a></li>
@@ -397,15 +399,12 @@
     <script src="script.js"></script>
 
     <script>
-        const stickyTop = document.querySelector('.sticky-top');
-        const offcanvas = document.querySelector('.offcanvas');
-
-        offcanvas.addEventListener('show.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'visible';
+        document.addEventListener('show.bs.offcanvas', function () {
+            document.body.style.overflowX = 'hidden';
         });
 
-        offcanvas.addEventListener('hidden.bs.offcanvas', function(){
-            stickyTop.style.overflow = 'hidden';
+        document.addEventListener('hidden.bs.offcanvas', function () {
+            document.body.style.overflowX = '';
         });
 
 
@@ -433,4 +432,5 @@
     </script>
 
 </body>
+
 </html>
